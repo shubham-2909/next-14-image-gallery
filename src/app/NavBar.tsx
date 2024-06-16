@@ -11,7 +11,7 @@ export default function NavBar() {
     <Navbar bg="primary" variant="dark" sticky="top" expand="sm" collapseOnSelect>
       <Container>
         <Navbar.Brand as={Link} href="/">
-          NextJS 13.4 Image Gallery
+          NextJS 14 Image Gallery
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="main-navbar" />
         <Navbar.Collapse id="main-navbar">
@@ -24,6 +24,7 @@ export default function NavBar() {
               <NavDropdown.Item as={Link} href="/topics/fitness">Fitness</NavDropdown.Item>
               <NavDropdown.Item as={Link} href="/topics/coding">Coding</NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link as={Link} href="/search" active={pathname === "/search"}>Search</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
